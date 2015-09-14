@@ -1,0 +1,189 @@
+[
+    {
+        "id": 1,
+        "parent_id": 1,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/1/img-29.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/1/thumb_img-29.jpg"
+                }
+            }
+        },
+        "title_en": "Computers-1",
+        "slug": "computers-1",
+        "description_en": "Nulla omnis porro ut et vel. Nostrum totam quam beatae doloribus eaque.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/computers-1.json"
+    },
+    {
+        "id": 2,
+        "parent_id": 1,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/2/img-32.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/2/thumb_img-32.jpg"
+                }
+            }
+        },
+        "title_en": "Beauty-2",
+        "slug": "beauty-2",
+        "description_en": "Fugit reprehenderit animi hic possimus. Eveniet sit dolorum saepe commodi porro sequi. Quibusdam unde architecto labore nihil impedit ab doloribus.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/beauty-2.json"
+    },
+    {
+        "id": 3,
+        "parent_id": 2,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/3/img-2.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/3/thumb_img-2.jpg"
+                }
+            }
+        },
+        "title_en": "Industrial-3",
+        "slug": "industrial-3",
+        "description_en": "Molestiae sed officiis et voluptas. Quam est quia incidunt voluptatem hic.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/industrial-3.json"
+    },
+    {
+        "id": 4,
+        "parent_id": 2,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/4/img-15.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/4/thumb_img-15.jpg"
+                }
+            }
+        },
+        "title_en": "Books-4",
+        "slug": "books-4",
+        "description_en": "Culpa dolor quo. Placeat deleniti voluptatibus quidem qui blanditiis sint odit.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/books-4.json"
+    },
+    {
+        "id": 5,
+        "parent_id": 1,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/5/img-9.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/5/thumb_img-9.jpg"
+                }
+            }
+        },
+        "title_en": "Baby-5",
+        "slug": "baby-5",
+        "description_en": "Tempore doloremque sapiente velit vitae qui deserunt labore. Ut molestias excepturi rerum et nihil fuga aut.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/baby-5.json"
+    },
+    {
+        "id": 6,
+        "parent_id": 1,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/6/img-18.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/6/thumb_img-18.jpg"
+                }
+            }
+        },
+        "title_en": "Beauty-6",
+        "slug": "beauty-6",
+        "description_en": "Reprehenderit qui dolores. Voluptatem a architecto in. Dicta voluptatibus explicabo qui saepe incidunt. Et saepe enim iure minus labore sint suscipit.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/beauty-6.json"
+    },
+    {
+        "id": 7,
+        "parent_id": 1,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/7/img-7.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/7/thumb_img-7.jpg"
+                }
+            }
+        },
+        "title_en": "Shoes-7",
+        "slug": "shoes-7",
+        "description_en": "Inventore minus sit aperiam. Nobis a voluptas et modi aut voluptates. Enim velit doloribus molestiae quasi fugiat pariatur ipsum. Quo voluptatem dolore quaerat a.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/shoes-7.json"
+    },
+    {
+        "id": 8,
+        "parent_id": 1,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/8/img-25.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/8/thumb_img-25.jpg"
+                }
+            }
+        },
+        "title_en": "Automotive-8",
+        "slug": "automotive-8",
+        "description_en": "Voluptate reiciendis dolorem occaecati facilis illum ducimus. Laboriosam sit et veniam vero nisi magni perferendis. Consequatur blanditiis voluptates.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/automotive-8.json"
+    },
+    {
+        "id": 9,
+        "parent_id": 1,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/9/img-30.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/9/thumb_img-30.jpg"
+                }
+            }
+        },
+        "title_en": "Books-9",
+        "slug": "books-9",
+        "description_en": "Rerum aut omnis temporibus corporis. Doloribus quas facilis dicta. Eum consequatur et voluptas. Praesentium qui error sit provident totam modi.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/books-9.json"
+    },
+    {
+        "id": 10,
+        "parent_id": 1,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/10/img-24.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/10/thumb_img-24.jpg"
+                }
+            }
+        },
+        "title_en": "Garden-10",
+        "slug": "garden-10",
+        "description_en": "Earum aspernatur vel sunt. Officia cumque deserunt et. Delectus sed dicta quod non quis facere cum. Quos et animi quia porro.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/garden-10.json"
+    },
+    {
+        "id": 11,
+        "parent_id": 1,
+        "thumbnail": {
+            "thumbnail": {
+                "url": "/uploads/category/thumbnail/11/img-27.jpg",
+                "thumb": {
+                    "url": "/uploads/category/thumbnail/11/thumb_img-27.jpg"
+                }
+            }
+        },
+        "title_en": "Jewelery-11",
+        "slug": "jewelery-11",
+        "description_en": "Sed laboriosam et eveniet corrupti vitae. Id ducimus omnis saepe rerum non et non.",
+        "active": true,
+        "url": "http://quickandclean.org/fr/categories/jewelery-11.json"
+    }
+]

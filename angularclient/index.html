@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>AngularJS Client for RESTful APIs web service</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-systemaker.css" /> -->
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/angular-route.min.js"></script>
+  <script type="text/javascript" src="js/angular-resource.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/ui-bootstrap-tpls-0.12.1.min.js"></script>
+  <script type="text/javascript" src="js/angular-translate.min.js"></script>
+  <script type="text/javascript" src="js/tmhDynamicLocale.js"></script>
+  <script type="text/javascript" src="js/dirPagination.js"></script>
+</head>
+<body ng-app='app' ng-controller="MainCtrl">
+<a name="Top"></a>
+<!-- MENU BAR -->
+        <nav class="navbar navbar-inverse navbar-fixed-top topnav" role="navigation">
+          <div class="container topnav">
+          <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" ng-click="navbarCollapsed = !navbarCollapsed">
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span></button> 
+              <a class="navbar-brand topnav" href="#!items">
+                <!-- your branding here -->
+                <img height="24px" width="24px" ng-src="img/systemaker_icon.png" alt="icon" align="left" ng-cloak>  {{title}}
+              </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div  class="collapse navbar-collapse" collapse="navbarCollapsed">
+            <!-- your normal collapsable content here -->
+              <ul class="nav navbar-nav navbar-right">
+                <li ng-class="menuClass('items')"><a href="#!items" ng-click="addAlert()"><span translate="HOME">Home</span></a></li>
+                <li ng-class="menuClass('login')" ng-hide="loggedInUser"><a href="#!login">Login</a></li>
+                <li ng-class="menuClass('logout')" ng-show="loggedInUser"><a href="#!logout">Logout</a></li>
+                <li ng-class="menuClass('help')"><a href="#!help"><span translate="HELP">Help</span></a></li>
+                <li class="btn-group" dropdown is-open="status.isopen">
+                  <a class="dropdown-toggle"  dropdown-toggle ng-disabled="disabled"><img height="24px" width="24px" ng-src="img/flags/{{language}}.png" alt="icon" ng-cloak> {{language}} lang<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href  ng-click="changeLanguage('en')" class="btn ng-scope"><img height="32px" width="32px" src="img/flags/en.png" alt="icon"> <span translate="BUTTON_LANG_EN">English</span></a></li>
+                    <li><a href  ng-click="changeLanguage('fr')" class="btn ng-scope"><img height="32px" width="32px" src="img/flags/fr.png" alt="icon"> <span translate="BUTTON_LANG_FR">French</span></a></li>
+                  </ul>
+                </li>
+              </ul>  
+            </div>
+          </div>
+        </nav>
+ <!-- Header -->
+ <a name="home"></a>
+ <div class="home">
+  <div class="container">
+
+<!-- <div ng-include src="partials/help.html"></div>  -->
+
+
+
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
+    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+      <ng-view></ng-view>
+    </div>
+  </div>
+  
+  <div class="container container-fluid">
+    <p class="pull-right">
+      <a href="#Top"><span class="glyphicon-class glyphicon glyphicon-chevron-up"></span> Top</a>
+    </p>
+    <hr/>
+    <strong>Language : </strong> <span translate="LANGUAGE" class="ng-scope"></span>
+    |
+    <strong>floating point number: </strong>{{1234.567 | number}}
+    |
+    <strong>currency format: </strong>{{2996.48 | currency}}
+    |
+    <strong>date format: </strong> {{'2015-02-09T08:34:00.000Z' | date: 'medium'}}
+    <hr/>
+    <p>&copy; 2015 <a href="/">AngularJS STarterkit !</a>  All Rights Reserved. | Powered by <a href="http://systemaker.com">Systemaker.com</a></p>  
+  </div>
+  
+  </div>
+</div>
+</body>
+</html>

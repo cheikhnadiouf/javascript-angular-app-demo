@@ -1,0 +1,31 @@
+<div class="col-sm-4 col-md-4">
+    <!-- ADD FORM VALIDATION NEW -->
+      <div class="panel panel-default"  >
+      <div class="panel-heading">
+        <label class="panel-title">Add a new item</label>
+      </div>
+      <div class="panel-body">
+      <form name="form" class="form" ng-submit="submitItem()" >
+          <div class="form-group">
+              <label>Title</label>
+              <input type="text" class="form-control" ng-model="new.title_en" required />
+              
+          </div>
+          <div class="form-group">
+              <label>Parent_id</label>
+              <input type="number" min="1900" max="2030" class="form-control" ng-model="new.parent_id" required />
+          </div>
+          <div class="row">
+              <div class="col-xs-6">
+                  <label>Active: <input type="checkbox" ng-model="new.active" /></label>
+              </div>
+              <input type="hidden" class="form-control" ng-model="new.id"  />
+              <div class="col-xs-6">
+                  <button class="btn btn-primary pull-right" ><span class="glyphicon glyphicon-plus-sign"></span> Submit</button>
+              </div>
+          </div>
+      </form>
+      </div>
+      </div>
+    
+    </div>

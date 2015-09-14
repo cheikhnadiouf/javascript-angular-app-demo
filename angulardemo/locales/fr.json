@@ -1,0 +1,32 @@
+{
+  "app": {
+    "name": "i18next"
+  },
+  "nav": {
+    "home" :           "Accueil",
+    "about" :          "A propos",
+    "contact" :        "Contact",
+    "welcome" :        "Bienvenue!",
+    "submit" :         "Envoyer",
+    "toggle_sidebar" : "Sidebar bascule",
+    "sign_out" :       "logout",
+    "sign_in" :        "login",
+    "view_details" :   "Voir details",
+		"users" : "Utilisateurs",
+    "user" : "compte",
+		"role" : "Rôle",
+		"my_profile" : "Mon profile",
+		"settings" : "Configuration",
+		"posts" : "Pages",
+		"groups" : "Groupes",
+		"all" : "Tous",
+		"new" : "Nouveau",
+		"create" : "Créer",
+		"save" : "Enregistrer",
+    "edit" : "Editer",
+		"update" : "Mettre à jour",
+		"destroy" : "Detruire",
+		"delete" : "Supprimer",
+    "remove" : "Effacer"
+  }
+}

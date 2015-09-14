@@ -1,0 +1,22 @@
+<div class="panel panel-default"  >
+      <div class="panel-heading">
+      <a ng-click="newItem()" href="" class="btn btn-primary btn-sm pull-right">
+          <span class="glyphicon glyphicon-plus"></span>
+          Add new
+        </a>
+      <label class="panel-title">Show</label>
+      </div>
+      <div class="panel-body">
+        <h3>Title : {{item.title_en}}</h3>
+        <p>Id: {{item.id}}</p>
+        <p>Parent_id : {{item.parent_id}}</p>
+        <p>Active: {{item.active}}</p>
+
+      <p>
+      <hr/>
+      <a href="#!items/{{item.id}}/edit"><span class="glyphicon glyphicon-pencil"></span> edit</a> 
+      | <a href="" ng-really-click="deleteItem(item.id)"  ng-really-message="Are you sure?"><span class="glyphicon glyphicon-trash"> remove</a>
+      | <a href="#!items}"><span class="glyphicon glyphicon-list-alt"></span> back</a>
+      <p>
+      </div>
+</div>

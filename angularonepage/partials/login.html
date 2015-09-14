@@ -1,0 +1,21 @@
+<h3>Login</h3>
+
+
+<form ng-submit="login()" ng-hide="loggedInUser" class="well form-inline">
+<input ng-model="user.email" type="text" val="Your email" placeholder="Email" required>
+<input ng-model="user.password" type="password" val="password" placeholder="Password">
+<button type="submit" class="btn  btn-default">Log in</button>
+
+<!--
+or
+<button ng-click="signup()" class="btn btn-default">Sign up</button>
+-->
+
+</form>
+<div ng-show="user.errors">
+<p>{{ user.errors }}</p>
+</div>
+
+<div ng-show="loggedInUser">
+<label>User email: {{loggedInUser}}</label>
+</div>
