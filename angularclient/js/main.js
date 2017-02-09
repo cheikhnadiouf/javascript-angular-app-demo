@@ -28,73 +28,6 @@ app.config(function($routeProvider, $locationProvider) {
       .otherwise( { redirectTo: "/items" });
 });
 
-
-
-
-
-// USER TOKEN HANDLER
-//-------------------------------------------------------------------------------------
-/*
-app.factory('tokenHandler', function($rootScope, $http, $q) {
-  var token = null,
-      currentUser;
- 
-  var tokenHandler = {
-    // store our token for later retrieval
-    set: function(v) { token = v; },
-    get: function() {
-      if (!token) {
-        $rootScope.$broadcast('event:unauthorized');
-      }
-      else {
-        return token;
-      }
-    },
-    getCurrentUser: function() {
-      var d = $q.defer();
-
-      if (currentUser) {
-        d.resolve(currentUser);
-      } else {
-        $http({
-          url: '/api/current_user',
-          method: 'POST'
-        }).then(function(data) {
-          d.resolve(data.data);
-        });
-      }
-      return d.promise;
-    },
-    wrapActions: function(r, actions) {
-      // copy original resource
-      var wrappedResource = r;
-      for (var i=0; i < actions.length; i++) {
-        tokenWrapper( wrappedResource, actions[i] );
-      }
-      // return modified copy of resource
-      return wrappedResource;
-    }
-  };
-  
-  // https://gist.github.com/nblumoe/3052052
-  var tokenWrapper = function(resource, action) {
-    // copy original action
-    resource['_' + action]  = resource[action];
-    // create new action wrapping the original and sending token
-    resource[action] = function( data, success, error){
-      return resource['_' + action](
-        angular.extend({}, data || {}, {access_token: tokenHandler.get()}),
-        success,
-        error
-      );
-    };
-  };
- 
-  return tokenHandler;
-}); */
-
-
-
 // TRANSLATION DYNAMIC I18N ANGULAR FILES WITH tmhDynamicLocale
 //-------------------------------------------------------------------------------------
 app.config(function(tmhDynamicLocaleProvider) {
@@ -473,26 +406,7 @@ app.controller("IndexCtrl", function($scope, $location, Items, Item) {
         flash.setMessage("wrong email", "danger");  
         $scope.user.errors = "error login";
       }
-      // Post to our api sign_in route
-      /*
-      $http({
-        url: '/api/users/sign_in',
-        method: 'POST',
-        data: { user: $scope.user }
-      }).success(function(data) {
-        if (data.success) {
-          // If we get back an authenticated user (indicated by
-          // the success in the response, not if the response 
-          // returns 401 - so we can capture the user errors
-          $scope.ngModel = data.data.data;
-          tokenHandler.set(data.data.auth_token);
-          $location.path('/');
-          flash.setMessage("successively logged in", "success");
-        } else {
-          $scope.ngModel = data;
-          $scope.user.errors = data.info;
-        }
-      });*/
+
     };
     // Signup action
     $scope.signup = function() {
@@ -507,25 +421,6 @@ app.controller("IndexCtrl", function($scope, $location, Items, Item) {
         $scope.user.errors = "error login";
       }
         
-      
-      /*
-      $http({
-        url: '/api/users',
-        method: 'POST',
-        data: { user: $scope.user }
-      }).success(function(data) {
-        // If the request is successful, and the user
-        // has been created: store the auth_token,
-        // broadcast the 'authenticated' event across
-        // our app, and redirect to '/'
-        tokenHandler.set( data.auth_token );
-        $scope.$broadcast('event:authenticated');
-        $location.path('/');
-        flash.setMessage("successively signed in", "success");
-      }).error(function(reason) {
-        // Store the errors to format on screen
-        $scope.user.errors = reason;
-      });*/
     };
   });
   
