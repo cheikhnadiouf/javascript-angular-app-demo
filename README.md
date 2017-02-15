@@ -1,4 +1,4 @@
-# angular demo samples
+# angular web app demo
 Angular demo samples application for Client-side (with CRUD services, bootstrap responsive framework and jquery included)
 
 Featuring: internationalization, pagination, filters, bootstrap ui and partial templates, flash message notifications, Authentication, Authorization, CRUD features and RestFul APIs web services.
