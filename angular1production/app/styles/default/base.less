@@ -1,0 +1,482 @@
+/* FONTS, TYPOGRAPHY, BASELINE & HEIGHT BLOCK
+------------------------------------*/
+
+
+
+
+/* BODY STYLE */
+
+/* @section body */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.sticky-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+#maincontent{
+	margin-top : 60px;
+}
+
+
+/* TEXTS */
+
+.text-base {
+	font-size: @custom-font-size-base; // ~14px
+	line-height: @custom-baseline ; // ~22px
+}
+
+.text-large {
+   font-size: ceil((@custom-font-size-base * 1.25));  // ~18px
+   line-height: @custom-baseline ;
+}
+
+.text-small {
+   font-size: ceil((@custom-font-size-base * 0.85)); // ~14px
+   line-height: @custom-baseline ;
+}
+
+.text-tiny {
+   font-size: ceil((@custom-font-size-base * 0.75)); // ~12px
+}
+
+
+.text-lowercase {
+	text-transform: lowercase !important;
+}
+
+
+p {
+   font-size: @custom-font-size-base;
+   line-height: @custom-baseline ;
+   margin-bottom: @custom-baseline;
+}
+
+/* LINKS */
+
+a {
+	color: @custom-link-color;
+	
+}
+a:hover {
+	color: @custom-link-hover-color;
+	cursor: pointer;
+}
+a:active {
+	color: @custom-link-active-color;
+}
+
+a:focus {
+	color: @custom-link-color;	
+}
+
+
+.actived {
+	color: @custom-color-primary;
+}
+
+
+a.actived {
+	color: @custom-color-primary;
+}
+
+
+/* HEADING */
+
+h1 {
+	font-size: @custom-font-size-h1; // ~36px
+	line-height: @custom-baseline * 2;
+	margin-bottom: @custom-baseline;
+}
+h2 {
+	font-size: @custom-font-size-h2; // ~30px
+	line-height: @custom-baseline * 2;
+	margin-bottom: @custom-baseline;
+}
+h3 {
+	font-size: @custom-font-size-h3; // ~24px
+	line-height: @custom-baseline ;
+}
+h4 {
+	font-size: @custom-font-size-h4; // ~18px
+	line-height: @custom-baseline;
+}
+h5 {
+	font-size: @custom-font-size-h5; // ~14px
+	line-height: @custom-baseline;
+}
+h6 {
+	font-size: @custom-font-size-h6; // ~12px
+	line-height: @custom-baseline;
+}
+
+
+/* ICONS */
+
+.fa {
+	margin-right : @custom-space-horiz * 0.5;
+	/* font-size: @custom-font-size-base; */
+}
+
+
+
+.fa-1-2x {
+	font-size: 1.2em;
+}
+
+/* COLORS */
+
+.color-orange {
+	color : @custom-orange;
+}
+
+.color-green {
+	color : @custom-color-primary;
+}
+
+.color-black {
+	color : @custom-black;
+}
+
+.color-grey {
+	color : @custom-grey;
+}
+
+.color-grey-light {
+	color : @custom-grey-light;
+}
+
+.color-grey-darker {
+	color : @custom-grey-darker;
+}
+
+.fill-grey-light{
+	background-color: @custom-grey-light;
+}
+
+
+.fill-grey-dark{
+	background-color: @custom-grey-dark;
+}
+
+.fill-primary {
+	background-color: @custom-color-primary;
+	color: @custom-white;
+	overflow: auto;
+	margin-left: @custom-space-horiz *-1;
+	margin-right: @custom-space-horiz *-1;
+	margin-bottom: @custom-space-vert;
+}
+.color-primary a {
+	color: @custom-white;
+	
+}
+
+
+.fill-primary-btn {
+	background-color: @custom-color-primary;
+	color: @custom-white;	
+}
+
+
+.success {
+	color : @custom-success;
+}
+.info {
+	color : @custom-info;
+}
+.warning {
+	color : @custom-warning;
+}
+.error {
+	color : @custom-error;
+}
+
+.color-white {
+	color : @custom-white;
+}
+
+/* BODY
+------------------------------------*/
+
+body {
+	font-family: @custom-font-family-base;
+	font-size: @custom-font-size-base; // ~14px
+	line-height: @custom-baseline ; // ~22px
+	font-color: @custom-body-text-color;
+	/* background-color: @custom-body-bg; */
+}
+
+
+
+
+
+/* CUSTOM BREAKPOINTS & LAYOUTS
+------------------------------------*/
+
+/* Extra Small screen / mobile */
+/* rules for very small mobile ( (320) < 480) */
+/* rules for medium mobile  (480 > 768)  */
+@media all and (max-width: 767px) {
+	.container {
+		width: 100%;
+		padding:0;
+		margin:0;
+	}
+	
+	.row{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	body {
+		padding:0;
+	}
+
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom:0;
+	}
+  
+}
+
+
+/* Small screen / tablet */
+/* rules for tablet & phablet (768 > 992) */
+@media all and (min-width: @custom-container-sm-min) {
+	.container {
+		width: 95%;
+	}
+	
+	.pull-right-sm {
+		float: right;
+	}
+}
+
+/* Medium screen / desktop */
+/* rules for desktop (992 > 1200) */
+@media all and (min-width: @custom-container-md-min) {
+	.container {
+		width: 95%;
+	}
+  
+	.pull-right-md {
+		float: right !important;
+	}  
+}
+
+/* Large screen / wide desktop */
+/* rules for large (1200 > + 1800) */
+@media all and (min-width: @custom-container-lg-min) {
+	.container {
+		width: 90%;
+	}
+	
+	.pull-right-lg {
+		float: right !important;
+	}
+}
+
+
+/* very Large screen / very wide desktop */
+/* rules for large (+1800) */
+@media all and (min-width: @custom-container-lg-max) {
+	.container {
+		width: 85%;
+	}
+	
+	.pull-right-lg {
+		float: right !important;
+	}
+}
+
+
+
+
+
+/* UTILS
+------------------------------------*/
+
+
+.cut-long-words {
+	word-break: break-all;
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	-ms-word-wrap:break-word;
+    overflow-wrap: break-word; /* For other browsers*/
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+.disabled:hover {
+  background-color: transparent !important;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.row-centered {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100%;
+    height: 100%;	
+	box-sizing:border-box;
+}
+
+
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.at-bottom {
+    position: absolute;
+    bottom: @custom-baseline;
+}
+
+
+
+
+/* HEIGHT BLOCK */
+.height-100 { min-height: @custom-baseline * 5;}
+.height-150 { min-height: @custom-baseline * 8;}
+.height-200 { min-height: @custom-baseline * 10;}
+.height-250 { min-height: @custom-baseline * 13;}
+.height-300 { min-height: @custom-baseline * 15;}
+.height-350 { min-height: @custom-baseline * 18;}
+.height-400 { min-height: @custom-baseline * 20;}
+.height-450 { min-height: @custom-baseline * 23;}
+.height-500 { min-height: @custom-baseline * 25;}
+.height-1000 { min-height: @custom-baseline * 50;}
+
+
+/* WIDTH BLOCK */
+.width-100 { max-width: @custom-baseline * 5;}
+.width-150 { max-width: @custom-baseline * 8;}
+.width-200 { max-width: @custom-baseline * 10;}
+.width-250 { max-width: @custom-baseline * 13;}
+.width-300 { max-width: @custom-baseline * 15;}
+.width-350 { max-width: @custom-baseline * 18;}
+.width-400 { max-width: @custom-baseline * 20;}
+.width-450 { max-width: @custom-baseline * 23;}
+.width-500 { max-width: @custom-baseline * 25;}
+.width-1000 { max-width: @custom-baseline * 50;}
+
+
+
+/* MARGIN */
+
+	/* TOP */
+	.margin-top-5{
+		margin-top : 5px !important;
+	}
+	.margin-top-10{
+		margin-top : 10px !important;
+	}
+	.margin-top-15{
+		margin-top : 15px !important;
+	}
+	.margin-top-20{
+		margin-top : 20px !important;
+	}
+	.margin-top-25{
+		margin-top : 25px !important;
+	}
+	.margin-top-30{
+		margin-top : 30px !important;
+	}
+	.margin-top-35{
+		margin-top: 35px !important;
+	}
+
+
+	/* RIGHT */
+	.margin-right-5{
+		margin-right : 5px !important;
+	}
+	.margin-right-10{
+		margin-right : 10px !important;
+	}
+	.margin-right-15{
+		margin-right : 15px !important;
+	}
+	.margin-right-20{
+		margin-right : 20px !important;
+	}
+	.margin-right-25{
+		margin-right : 25px !important;
+	}
+	.margin-right-30{
+		margin-right : 30px !important;
+	}
+	.margin-right-35{
+		margin-right: 35px !important;
+	}
+
+
+	/* BOTTOM */
+	.margin-bottom-5{
+		margin-bottom : 5px !important;
+	}
+	.margin-bottom-10{
+		margin-bottom : 10px !important;
+	}
+	.margin-bottom-15{
+		margin-bottom : 15px !important;
+	}
+	.margin-bottom-20{
+		margin-bottom : 20px !important;
+	}
+	.margin-bottom-25{
+		margin-bottom : 25px !important;
+	}
+	.margin-bottom-30{
+		margin-bottom : 30px !important;
+	}
+	.margin-bottom-35{
+		margin-bottom: 35px !important;
+	}
+
+
+	/* LEFT */
+	.margin-left-5{
+		margin-left : 5px !important;
+	}
+	.margin-left-10{
+		margin-left : 10px !important;
+	}
+	.margin-left-15{
+		margin-left : 15px !important;
+	}
+	.margin-left-20{
+		margin-left : 20px !important;
+	}
+	.margin-left-25{
+		margin-left : 25px !important;
+	}
+	.margin-left-30{
+		margin-left : 30px !important;
+	}
+	.margin-left-35{
+		margin-left: 35px !important;
+	}
+
+
+
+
+
+
+

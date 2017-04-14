@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="fr" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="fr" class="ie ie9"> <![endif]-->
+<!--[if (gt IE 11)|!(IE)]><!-->
+<html lang="fr" ng-app="angular1appdemo">
+<!--<![endif]-->
+    <head>
+		<!-- $location in HTML5 mode requires a <base> tag to be present -->
+		<base href="/">
+		<title>Angular 1 app demo | Rapid development toolchain</title>
+		<!-- Meta -->
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">        
+        <meta name="description" content="Prototype - Rapid development toolchain ..." />
+        <!-- Favicon -->
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<!--  Css scripts -->
+			<!-- bower:css -->
+			<!-- bower installed css files will go here... -->
+			<!-- endinject -->
+
+			<!-- inject:css -->
+			<!-- built css files will go here... -->
+		<!-- endinject -->	
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->		
+    </head>
+    <body class="header-fixed">
+		<!-- HEADER -->
+		<app-header></app-header>
+		<!-- /end HEADER -->
+		<!-- CONTAINER -->
+		<div class="container" id="maincontent">
+			<!-- <div ng-include="'templates/includes/flash_message.html'"></div> -->
+			<div id="body_content">
+				<div ui-view>
+				</div>
+			</div>			
+		</div>
+		<!-- /end CONTAINER -->
+		
+		<!-- FOOTER -->
+		<app-footer></app-footer>
+		<!-- /end FOOTER -->
+		<!--  Js scripts -->
+			<!-- bower:js -->
+			<!-- bower installed scripts will go here... -->
+			<!-- endinject -->
+
+			<!-- inject:js -->
+			<!-- app scripts will go here... -->
+		<!-- endinject -->
+
+    </body>
+</html>

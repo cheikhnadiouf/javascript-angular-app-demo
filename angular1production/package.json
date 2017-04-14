@@ -1,0 +1,35 @@
+{
+  "name": "angular1appdemo",
+  "version": "0.0.1",
+  "description": "Angular web app demo",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Cheikhna Diouf",
+    "email": "info@systemaker.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-inject": "latest",
+    "gulp-less": "latest",
+    "gulp-load-plugins": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-notify": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "main-bower-files": "^2.13.0",
+    "run-sequence": "latest"
+  },
+  "scripts": {
+    "import": "npm install -verbose",
+    "start": "gulp prod"
+  }
+}

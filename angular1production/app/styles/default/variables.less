@@ -1,0 +1,121 @@
+/* CUSTOM COLORS
+------------------------------------*/
+@custom-black:			#000;
+@custom-white:			#fff;
+
+@custom-grey:			#eee;
+@custom-grey-light:		#f3f3f3;
+@custom-grey-dark:		#e8e8e8;
+@custom-grey-darker:	#979797;
+
+@custom-color-primary:		#5cb85c;
+@custom-color-secondary:	#5cb85c;
+@custom-color-third:		#5cb85c;
+
+
+@custom-red:		#5cb85c;
+@custom-blue:	    #5cb85c;
+@custom-green:	#5cb85c;
+@custom-orange:	#5cb85c;
+@custom-yellow:	#5cb85c;
+@custom-purple:	#5cb85c;
+
+@custom-success:         #5cb85c;
+@custom-info:            #5bc0de;
+@custom-warning:         #f0ad4e;
+@custom-error:          #d9534f;
+
+
+
+/* CUSTOM BODY
+------------------------------------*/
+@custom-body-bg:               @custom-white;
+@custom-body-text-color:       @custom-grey-dark;
+
+
+/* CUSTOM LINKS
+------------------------------------*/
+@custom-link-color:            @custom-color-primary;
+
+/* Link hover color set via `darken()` function */
+@custom-link-hover-color:      darken(@custom-link-color, 15%);
+
+@custom-link-active-color:      lighten(@custom-link-color, 15%);
+
+
+
+/* CUSTOM TYPOGRAPHY
+------------------------------------*/
+
+/* FONT FAMILY */
+@custom-font-family-base:  		arial,helvetica,sans-serif;
+@custom-font-family-large: 		arial,helvetica,sans-serif;
+@custom-font-family-small: 		arial,helvetica,sans-serif;
+@custom-font-family-thin: 		arial,helvetica,sans-serif;
+
+/* FONT SIZE */
+@custom-font-size-base:          16px;
+@custom-font-size-large:         ceil((@custom-font-size-base * 1.25)); // ~18px
+@custom-font-size-small:         ceil((@custom-font-size-base * 0.85)); // ~12px
+
+@custom-font-size-h1:            floor((@custom-font-size-base * 2.6)); // ~36px
+@custom-font-size-h2:            floor((@custom-font-size-base * 2.15)); // ~30px
+@custom-font-size-h3:            ceil((@custom-font-size-base * 1.5)); // ~22px
+@custom-font-size-h4:            ceil((@custom-font-size-base * 1.25)); // ~18px
+@custom-font-size-h5:            @custom-font-size-base; // ~14px
+@custom-font-size-h6:            ceil((@custom-font-size-base * 0.85)); // ~12px
+
+
+
+/* CUSTOM VERTICAL GRID (BASELINE, LINEHEIGHT AND HEIGHT BLOCK)
+------------------------------------*/
+
+/* BASELINE */
+@custom-baseline:					22px;
+
+/* HEIGHT BASED ON BASELINE MULTIPLE */
+@custom-height-baseline:		@custom-baseline;
+@custom-height-baseline-2:		@custom-baseline * 2;   
+@custom-height-baseline-3:     	@custom-baseline * 3;
+@custom-height-baseline-4:     	@custom-baseline * 4;
+@custom-height-baseline-5:     	@custom-baseline * 5;
+@custom-height-baseline-6:     	@custom-baseline * 6;
+@custom-height-baseline-7:     	@custom-baseline * 7;
+@custom-height-baseline-8:     	@custom-baseline * 8;
+@custom-height-baseline-9:     	@custom-baseline * 9;
+@custom-height-baseline-10:    	@custom-baseline * 10;
+
+
+/* CUSTOM MARGIN, PADDING */
+
+@custom-space-vert:		ceil((@custom-baseline * 0.5));
+@custom-space-horiz:		ceil((@custom-baseline * 0.5));
+
+/* RADIUS */
+@custom-border-radius: 7px;
+
+
+/* CUSTOM HORIZONTAL  GRID : BREAKPOINTS
+------------------------------------*/
+
+/* Extra Small screen / mobile */
+/* rules for very small mobile ( (320) < 480) */
+/* rules for medium mobile  (480 > 768)  */
+@custom-container-xs-min:                 320px;
+@custom-container-xs-max:                 767px;
+
+/* Small screen / phablet / tablet */
+/* rules for tablet & phablet (768 > 992) */
+@custom-container-sm-min:                 768px;
+@custom-container-sm-max:                 991px;
+
+/* Medium screen / desktop */
+/* rules for desktop (992 > 1200) */
+@custom-container-md-min:                 992px;
+@custom-container-md-max:                 1199px;
+
+/* Large screen / wide desktop */
+/* rules for large (1200 > + 1800) */
+@custom-container-lg-min:                 1200px;
+@custom-container-lg-max:                 1800px;
+

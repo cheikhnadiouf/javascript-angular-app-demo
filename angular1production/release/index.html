@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang="fr" class="ie ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="fr" class="ie ie9"> <![endif]-->
+<!--[if (gt IE 11)|!(IE)]><!-->
+<html lang="fr" ng-app="angular1appdemo">
+<!--<![endif]-->
+    <head>
+		<!-- $location in HTML5 mode requires a <base> tag to be present -->
+		<base href="/">
+		<title>Angular 1 app demo | Rapid development toolchain</title>
+		<!-- Meta -->
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">        
+        <meta name="description" content="Prototype - Rapid development toolchain ..." />
+        <!-- Favicon -->
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<!--  Css scripts -->
+			<!-- bower:css -->
+			<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+			<link rel="stylesheet" href="/bower_components/angular-ui-select/dist/select.css">
+			<link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css">
+			<!-- endinject -->
+
+			<!-- inject:css -->
+			<link rel="stylesheet" href="styles/app.min.css">
+			<!-- endinject -->	
+		
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->		
+    </head>
+    <body class="header-fixed">
+		<!-- HEADER -->
+		<app-header></app-header>
+		<!-- /end HEADER -->
+		<!-- CONTAINER -->
+		<div class="container" id="maincontent">
+			<!-- <div ng-include="'templates/includes/flash_message.html'"></div> -->
+			<div id="body_content">
+				<div ui-view>
+				</div>
+			</div>			
+		</div>
+		<!-- /end CONTAINER -->
+		
+		<!-- FOOTER -->
+		<app-footer></app-footer>
+		<!-- /end FOOTER -->
+		<!--  Js scripts -->
+			<!-- bower:js -->
+			<script src="/bower_components/requirejs/require.js"></script>
+			<script src="/bower_components/jquery/dist/jquery.js"></script>
+			<script src="/bower_components/angular/angular.js"></script>
+			<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+			<script src="/bower_components/angular-translate/angular-translate.js"></script>
+			<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+			<script src="/bower_components/angular-mocks/angular-mocks.js"></script>
+			<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+			<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+			<script src="/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+			<script src="/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.js"></script>
+			<script src="/bower_components/angular-dynamic-locale/src/tmhDynamicLocale.js"></script>
+			<script src="/bower_components/angular-ui-validate/dist/validate.js"></script>
+			<script src="/bower_components/re-tree/re-tree.js"></script>
+			<script src="/bower_components/angular-utf8-base64/angular-utf8-base64.js"></script>
+			<script src="/bower_components/moment/moment.js"></script>
+			<script src="/bower_components/angular-ui-select/dist/select.js"></script>
+			<script src="/bower_components/ngstorage/ngStorage.js"></script>
+			<script src="/bower_components/ng-device-detector/ng-device-detector.js"></script>
+			<!-- endinject -->
+
+			<!-- inject:js -->
+			<script src="scripts/app.min.js"></script>
+			<!-- endinject -->
+
+    </body>
+</html>

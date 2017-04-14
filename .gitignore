@@ -1,0 +1,21 @@
+# packages repertory
+node_modules/
+bower_components/
+
+
+# Database maybe
+# *.sqlite
+
+#log file maybe
+*.log
+
+# Project specific ignores
+*.swp
+*.bak
+
+# secrets instance variables
+instance/*.*
+
+local_config.py
+.idea/
+.vscode/

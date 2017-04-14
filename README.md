@@ -5,11 +5,14 @@ Featuring: internationalization, pagination, filters, bootstrap ui and partial t
 
 Demo links :
 
-  - Angular demo (standalone version for  desktop & hybrid app mobile like phonegap/cordova) :
+  - Angular 1 standalone demo (standalone version for  desktop & hybrid app mobile like phonegap/cordova) :
     http://systemaker.com/angulardemo
   
-  - Angular client-side version for Restfull web services  (with ruby-on-rails backend) :
+  - Angular 1 client-side version for Restfull web services  (with ruby-on-rails backend) :
     http://systemaker.com/angularclient
 
-  - Angular one single-page version
+  - Angular 1 one single-page version :
     http://systemaker.com/angularonepage/
+
+  - Angular 1 production demo version including gulp, bower & NPM toochain :
+    demo online coming soon

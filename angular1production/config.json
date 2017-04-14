@@ -1,0 +1,35 @@
+{     
+    "environments": {  
+                    
+                    "default": "development",  
+                    "production":  {  
+                                        "host": "localhost",
+                                        "port": "3000",  
+                                        "debug": "false",
+                                        "testing": "false"
+                                    },
+                    "development":  {  
+                                       "host": "localhost",
+                                       "port": "3000",  
+                                        "debug": "true",
+                                        "testing": "false"
+                                    },
+                    "testing":  {  
+                                        "host": "localhost",
+                                        "port": "3000",  
+                                        "debug": "true",
+                                        "testing": "true"
+                                    }
+                },
+
+    "languages" : {
+                    "default" : "en-US"
+                   },
+    "theme" : "slate",      
+    "paths" : {
+        "root": ".",
+        "app": "app",
+        "release": "release",
+        "build": "build"  
+    }
+}
