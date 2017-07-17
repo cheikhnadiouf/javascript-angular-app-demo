@@ -10,6 +10,7 @@
 		'ui.select',
 		'pascalprecht.translate',		
 		'tmh.dynamicLocale',
+		'ngResource',
 		'angular1appdemo.routes',
 		'angular1appdemo.utils',
 		'angular1appdemo.translations',

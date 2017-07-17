@@ -29,6 +29,7 @@
     "bootswatch": "^3.3.2",
     "moment": "^2.17.1",
     "angular-ui-select": "latest",
-    "components-font-awesome": "^4.7.0"
+    "components-font-awesome": "^4.7.0",
+    "angular-resource": "^1.6.4"
   }
 }

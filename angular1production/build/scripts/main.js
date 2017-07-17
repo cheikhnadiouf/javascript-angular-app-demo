@@ -3,7 +3,6 @@
 
 	angular.module('angular1appdemo')
 
-	
 
     /**
      * Run live process 

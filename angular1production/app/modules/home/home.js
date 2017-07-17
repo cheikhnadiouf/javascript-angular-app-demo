@@ -20,23 +20,37 @@ angular.module('angular1appdemo.home')
 }])
 
 
+
 /**
 * Controller
 */
-.controller('homeCtrl', ['$scope', 'homeModel', 'homeResource', '$q', '$filter', '$log',  '$http',
+.controller('homeCtrl', ['$scope', 'homeModel', 'HomeManager', '$q', '$filter', '$log',  '$http',
 	
-		function ($scope, homeModel, homeResource, $q, $filter, $log, $http) {
+		function ($scope, homeModel, HomeManager, $q, $filter, $log, $http) {
 			/* jshint validthis: true */
 			var vm = this;	
 			
 			
 			// INIT
 			vm.homeModel = homeModel;
-			vm.homeResource = homeResource;
+			vm.homeManager = HomeManager;
 			vm.title = "home"; 
 			
+
+			vm.homeManager.listItems().$promise.then(
+                  function (response) {
+                  $log.info("*********************** MOCK ************* : " + angular.toJson(response));
+                  }, 
+                  function (error) {
+                  // error.message
+                  $log.info("*********************** MOCK ERROR ************* : " + error.message);
+                  }
+              );
+
+
 		}
-	]);
+	]);	
+
 	
 
 })();
