@@ -1,3 +1,4 @@
+Alert: Sadly, I don't have time to maintain this.
 # angular web app demo
 Angular web app demo samples application for Client-side (with CRUD services, bootstrap responsive framework and jquery included)
 
